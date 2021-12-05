@@ -7,7 +7,7 @@ if PY3:
     string_types = str,
 
     def b(s):
-        return s.encode("latin-1")
+        return s.encode("utf8")
 
 else:
     string_types = basestring,  # noqa
