@@ -264,7 +264,7 @@ class ResizeTarget:
                     mat_color = (0, 0, 0, 0)  # Transparent
                 resize_to_fit_kw['mat_color'] = mat_color
 
-            processor = pilkit.processors.ResizeToFit(**resize_to_fit_kw)
+            processor = pilkit.processors.ResizeToFill(**resize_to_fit_kw)
             img = processor.process(img)
 
         options = {
